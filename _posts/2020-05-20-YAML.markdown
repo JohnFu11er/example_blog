@@ -1,0 +1,28 @@
+---
+layout: post
+title:  "What the heck is YAML?"
+date:   2020-05-20 07:28:15 -0400
+categories: jekyll update
+---
+
+YAML is a useful file type for applications where data is being stored or transmitted. It is used in the construction of Ansible playbooks:
+
+{% highlight yaml %}
+---
+
+  - name: Some Awesome Play
+    hosts: routers
+    connection: network_cli
+    gather_facts: no
+
+    tasks:
+      - name: Retreive Running Config
+        ios_commands:
+          Commands: show run
+        register: output
+      
+      - name: Show Running Config
+        debug:
+          var: output.stdout
+
+{% endhighlight %}
