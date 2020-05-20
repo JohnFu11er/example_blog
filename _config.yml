@@ -22,7 +22,7 @@ title: Example Blog For Education Call
 email: FullerJ@jdi.socom.mil
 description: >- # this means to ignore newlines until "baseurl:"
   This is an example website for use in dislaying minor functionality of Jekyll
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "example_blog" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: some_twitter_name
 github_username: JohnFu11er
